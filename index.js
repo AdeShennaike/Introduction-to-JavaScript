@@ -135,13 +135,9 @@ function hungryDog(weight, age){
     console.log('Puppy');
     return (weight/100) * 10;
   }
-  else if(age >= 4/12 && age < 7/12){
+  else if(age >= .583 && age < 1){
     console.log('Puppy');
-    return (weight/100) * 5;
-  }
-  else if(age >= .583){
-    console.log('Puppy');
-    return weight * .05;
+    return (weight/100) * 4;
   }
 }
 
@@ -230,8 +226,8 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(num1){
+  return num1 * 0.621371;
 }
 
 
@@ -244,8 +240,8 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(num1){
+  return num1 / 30.48
 }
 
 
