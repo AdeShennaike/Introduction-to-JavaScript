@@ -37,8 +37,8 @@ Do the following:
    HINT: no function required
 */
 
-const num1 = 2;
-const num2 = num1 + 1;
+const num1 = 'ade';
+const num2 = num1 + "shennaike";
 console.log(num2)
 /*
 Task 1c - Convert Strings to Numbers
@@ -163,15 +163,15 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-let computer = Math.random();
-if(computer < .33){
-  computer = "rock";
+let computerChoice = Math.random();
+if(computerChoice < .33){
+  computerChoice = "rock";
 }
-else if(computer >= .33 && computer < .66){
-  computer = "paper";
+else if(computerChoice >= .33 && computerChoice < .66){
+  computerChoice = "paper";
 }
-else if(computer <= .66){
-  computer = "scissors";
+else if(computerChoice <= .66){
+  computerChoice = "scissors";
 }
 
 function game(user, computer){
@@ -212,8 +212,7 @@ function game(user, computer){
     return "you lose!";
   }
 }
-
-
+console.log(game('rock', computerChoice))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
