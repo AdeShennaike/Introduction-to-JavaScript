@@ -141,7 +141,7 @@ function hungryDog(weight, age){
   }
   else if(age >= .583){
     console.log('Puppy');
-    return (weight/100) * 85;
+    return weight * .05;
   }
 }
 
@@ -183,11 +183,35 @@ function game(user, computer){
     console.log(`Computer throws ${computer}`);
     return "it's a tie";
   }
+  else if(user === "paper" && computer === "paper"){
+    console.log(`Computer throws ${computer}`)
+    return "it's a tie";
+  }
+  else if(user === "scissors" && computer === "scissors"){
+    console.log(`Computer throws ${computer}`)
+    return "it's a tie";
+  }
   else if(user === "paper" && computer === "rock"){
     console.log(`Computer throws ${computer}`)
     return "you win!";
   }
-  else if(user === "scissor" && computer === "rock"){
+  else if(user === "rock" && computer === "scissors"){
+    console.log(`Computer throws ${computer}`)
+    return "you win!";
+  }
+  else if(user === "scissors" && computer === "paper"){
+    console.log(`Computer throws ${computer}`)
+    return "you win!";
+  }
+  else if(user === "scissors" && computer === "rock"){
+    console.log(`Computer throws ${computer}`)
+    return "you lose!";
+  }
+  else if(user === "rock" && computer === "paper"){
+    console.log(`Computer throws ${computer}`)
+    return "you lose!";
+  }
+  else if(user === "paper" && computer === "scissors"){
     console.log(`Computer throws ${computer}`)
     return "you lose!";
   }
